@@ -286,6 +286,14 @@ body {
     border-radius: 10%;
   }
 
+  .agja {
+    background-color: white;
+  }
+
+  .negatif {
+    background-color: black;
+  }
+
   @media (max-width:768px) {
 
     .to_hide_1 {
