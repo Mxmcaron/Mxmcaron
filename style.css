@@ -44,8 +44,8 @@ body {
   }
 
   .home_border:hover {
-    background: linear-gradient(to left, hsl(262, 63%, 52%, 0.7), hsl(322, 65%, 53%, 0.7));
     border-radius: 50%;
+    animation: fadeInBck 2s ease-in forwards;
 
   }
 
@@ -109,6 +109,12 @@ body {
     100% {
       opacity: 1;
     }
+  }
+
+  @keyframes fadeInBck {
+    100%   { background-color: #b02576; }
+    50%  { background-color: #b45a72; }
+    0% { background-color: #FFFFFF; }
   }
 
   .style_1 {
@@ -268,10 +274,24 @@ body {
     width: 800px;
   }
 
+  .passion_long_2 {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    width: 800px;
+  }
+
   .passion_long p {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 30%;
+    transform: translateX(-50%);
+  }
+
+  .passion_long_2 p {
+    position: absolute;
+    top: 30%;
+    left: 60%;
     transform: translateX(-50%);
   }
 
@@ -281,6 +301,17 @@ body {
     margin-left: 15px;
     position: relative;
     left: 60%;
+    transform: translateX(-50%);
+    border: white 2px solid;
+    border-radius: 10%;
+  }
+
+  .passion_long_2 img {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    left: 20%;
     transform: translateX(-50%);
     border: white 2px solid;
     border-radius: 10%;
@@ -407,6 +438,12 @@ body {
       display: row;
       flex-direction: column;
     }
+
+    .passion_long_2 {
+      width: unset;
+      display: row;
+      flex-direction: column;
+    }
   
     .passion_long p {
       position: relative;
@@ -416,6 +453,14 @@ body {
     }
   
     .passion_long img {
+      position: relative;
+      left: 40%;
+      border: white 2px solid;
+      border-radius: 10%;
+      margin-bottom: 30px;
+    }
+
+    .passion_long_2 img {
       position: relative;
       left: 40%;
       border: white 2px solid;
@@ -454,6 +499,11 @@ body {
   
   .ct_light {
     font-weight: 500
+  }
+
+  .blocked {
+    position: relative;
+    height: 45vh;
   }
   
   .bloc {
@@ -1205,7 +1255,8 @@ body {
   }
   
   .bgc-dark-slate-blue {
-    background-color: #364577
+    /*background-color: #364577*/
+    background: linear-gradient(#e66465, #9198e5);
   }
   
   .bgc-atomic-tangerine {
@@ -1218,14 +1269,48 @@ body {
   }
   
   .btn-atomic-tangerine {
-    background: #a1320c;
-    color: #fff !important
+    background: linear-gradient(to right, #ff0084, #33001b);
+    color: #fff !important;
   }
   
   .btn-atomic-tangerine:hover {
-    background: #c27956 !important;
-    color: #fff !important
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
+  .btn_animated {
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  .btn_animated_2 {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.top_pic {
+  position: absolute;
+  left: 4%;
+  width: 50;
+  height: 70px;
+}
   
   .ltc-white {
     color: #fff !important
