@@ -218,6 +218,10 @@ body {
     transform: translateX(-50%);
   }
 
+  .passion_list_cent {
+    text-align: center;
+  }
+
   .passion {
     display: flex;
     position: relative;
@@ -250,6 +254,20 @@ body {
     width: 800px;
   }
 
+  .passion_large_test {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    width: 800px;
+  }
+
+  .passion_large_text {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    width: 800px;
+  }
+
   .passion_large p {
     position: absolute;
     top: 40%;
@@ -265,6 +283,24 @@ body {
     transform: translateX(-50%);
     border: white 2px solid;
     border-radius: 7%;
+  }
+
+  .passion_large_test img {
+    position: relative;
+    height: 250px;
+    width: 600px;
+    border: white 2px solid;
+    border-radius: 2%;
+    transform: translateX(-9%);
+  }
+
+  .passion_large_text img {
+    position: relative;
+    height: 380px;
+    width: 600px;
+    border: white 2px solid;
+    border-radius: 2%;
+    transform: translateX(-9%);
   }
 
   .passion_long {
@@ -347,6 +383,11 @@ body {
     .style_1 {
       flex: row;
       flex-direction: column;
+    }
+
+    .style_3 {
+      display: flex;
+      justify-content: center;
     }
 
     .style_2 {
